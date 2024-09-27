@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="../asset/logo_navbar.svg" alt="Zen-Dragon-logo" />
+      </div>
+      <div id="menu-icon" class="menu-icon">
+        <img src="../asset/bar.svg">
+      </div>
+      <ul id="menu-list" class="hidden">
+        <li>
+          <a href="../main_page/main_page.html">Home</a>
+        </li>
+        <li>
+          <a href="#">Class</a>
+        </li>
+        <li>
+          <a href="../character/index.html">Character</a>
+        </li>
+        <li>
+          <a href="../isle/index.html">Isle of Berk</a>
+        </li>
+        <div class="pembatas">
+          <li><a>|</a></li>
+        </div>
+        <div class="sign-up" id="sign-up">
+          <li>
+            <a href="../register/register.html">Sign up</a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <main>
+      <div class="container1">
+        <div class="h3-dragon">
+
+          <!-- <h1 class="h1-judul">Zen Dragon Classes</h1>
+          <h3 class="h3-dragon">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dignissimos maxime aut qui blanditiis minus possimus saepe, molestiae quam harum fugit facilis atque alias porro tempora doloremque repellendus aliquam praesentium!</h3> -->
+          <h1>Zen Dragon Classes</h1>
+          <h3>In the world of Drakonia, a realm inhabited by legendary creatures known as dragons and filled with the wonders of elemental magic, humans and dragons coexist in a fragile harmony.</h3>
+        </div>
+        <div class="scroll" onclick="showElement()" id="maskparent">
+          <img src="../asset/icon_dragon.webp" alt="" id="mask" class="scroll-img">
+        </div>
+      </div>
+      <div class="element" id="desc" style="display: none;">
+        <div class="grid1">
+          <div class="kiri">
+            <img src="../asset/elemnent.webp" alt="" class="img-element">
+          </div>
+          <div class="text-element">
+            <h1 class="h1-element">Element in Zen Dragon Academy</h1>
+            <h3 class="h3-element">At the Zen Dragon Academy, dragons are classified by their elemental affinity, reflecting their deep connection to nature. Fire dragons learn discipline and inspiration, water dragons master empathy and harmony, earth dragons cultivate resilience and protection, air dragons embrace freedom and agility, aether dragons seek cosmic understanding, and void dragons confront the mysteries of existence. This classification honors diversity while teaching dragons to harmonize with their elemental essence for balance and enlightenment.</h3>
+            <h1 class="h1-ourdragon">Let's meet our Class</h1>
+          </div>
+        </div>
+        <div class="logo-element">
+          <div class="gambar-element" id="maskparent">
+            <img src="../asset/water_element.webp" alt="" class="img-element-logo" onclick="showDragon(0)" id="mask">
+          </div>
+          <div class="gambar-element" id="maskparent">
+            <img src="../asset/fire_element.webp" alt="" class="img-element-logo" onclick="showDragon(1)" id="mask">
+          </div>
+          <div class="gambar-element" id="maskparent">
+            <img src="../asset/earth_element.webp" alt="" class="img-element-logo" onclick="showDragon(2)" id="mask">
+          </div>
+          <div class="gambar-element" id="maskparent">
+            <img src="../asset/air_element.webp" alt="" class="img-element-logo" onclick="showDragon(3)" id="mask">
+          </div>
+          <div class="gambar-element" id="maskparent">
+            <img src="../asset/light.webp" alt="" class="img-element-logo" onclick="showDragon(4)" id="mask">
+          </div>
+          <div class="gambar-element" id="maskparent">
+            <img src="../asset/dark_element.webp" alt="" class="img-element-logo" onclick="showDragon(5)" id="mask">
+          </div>
+        </div>
+      </div>
+      <div class="grid-desc" id="desc0" style="display: none;">
+        <div class="grid1-desc">
+            <img src="../asset/water_element.webp" alt="" class="img-desc">
+            <h1 class="h1-desc">Water Class</h1>
+            <h3 class="h3-desc">Those born with water powers can summon healing rains, raging waves, and freezing ice. They are the guardians of rivers, lakes, and oceans, preserving the sources of life in ZenDragon.</h2>
+            </div>
+        <div class="grid2">
+            <img src="../asset/water.webp" alt="" class="img-char-desc">
+        </div>
+    </div>
+    <div class="grid-desc" id="desc1" style="display: none;">
+      <div class="grid1-desc">
+          <img src="../asset/fire_element.webp" alt="" class="img-desc">
+          <h1 class="h1-desc">Fire Class</h1>
+          <h3 class="h3-desc">Masters of fire control blazing infernos, searing heat, and dazzling light. They are the bringers of warmth in a world filled with icy wonders.</h2>
+          </div>
+      <div class="grid2">
+          <img src="../asset/fire.webp" alt="" class="img-char-desc">
+      </div>
+    </div>
+    <div class="grid-desc" id="desc2" style="display: none;">
+      <div class="grid1-desc">
+          <img src="../asset/earth_element.webp" alt="" class="img-desc">
+          <h1 class="h1-desc">Earth Class</h1>
+          <h3 class="h3-desc">Inhabitants of the earth class possess power over rock, soil, and all rooted life. They are the protectors of forests, mountains, and valleys, maintaining the delicate balance of nature.</h2>
+          </div>
+      <div class="grid2">
+          <img src="../asset/earth.webp" alt="" class="img-char-desc">
+      </div>
+    </div>
+    <div class="grid-desc" id="desc3" style="display: none;">
+      <div class="grid1-desc">
+          <img src="../asset/air_element.webp" alt="" class="img-desc">
+          <h1 class="h1-desc">Wind Class</h1>
+          <h3 class="h3-desc">Masters of the wind command breezy gusts, roaring storms, and ever-changing weather, traversing the skies with boundless freedom. They are the guardians of clouds and wanderers from one place to another in ZenDragon.</h2>
+          </div>
+      <div class="grid2">
+          <img src="../asset/air.webp" alt="" class="img-char-desc">
+      </div>
+    </div>
+    <div class="grid-desc" id="desc4" style="display: none;">
+      <div class="grid1-desc">
+          <img src="../asset/light_element.webp" alt="" class="img-desc">
+          <h1 class="h1-desc">Aether Class</h1>
+          <h3 class="h3-desc">Leaders of light wield the power to radiate mesmerizing light, dispelling darkness and providing hope to those in despair. They are the bringers of peace and enlightenment amidst the darkness.</h2>
+          </div>
+      <div class="grid2">
+          <img src="../asset/aether.webp" alt="" class="img-char-desc">
+      </div>
+    </div>
+    <div class="grid-desc" id="desc5" style="display: none;">
+      <div class="grid1-desc">
+          <img src="../asset/dark_element.webp" alt="" class="img-desc">
+          <h1 class="h1-desc">Dark Class</h1>
+          <h3 class="h3-desc">Understanding the power of darkness, those affiliated with the dark class control bewildering shadows and mystical forces that lurk in the night. They are the keepers of secrets and hidden knowledge in ZenDragon.</h2>
+          </div>
+      <div class="grid2">
+          <img src="../asset/Dark.webp" alt="" class="img-char-desc">
+      </div>
+    </div>
+    </main>
+    <footer>
+      <img src="../asset/logo_footer.svg" alt="" class="logo-footer">
+      <ul class="ul-footer">
+          <li class="li-footer">
+              <a href="../main_page/main_page.html" class="a-footer">Home</a>
+          </li>
+          <li class="li-footer">
+              <a href="../class/dragon.html" class="a-footer">Class</a>
+          </li>
+          <li class="li-footer">
+              <a href="../character/index.html" class="a-footer">Character</a>
+          </li>
+          <li class="li-footer">
+              <a href="../isle/index.html" class="a-footer">Isle of Berk</a>
+          </li>
+      </ul>
+      <h1 class="h1-footer">Follow Zen Dragon Academy</h1>
+      <div class="container-sosmed">
+          <img src="../asset/x.svg" alt="" class="img-sosmed">
+          <img src="../asset/facebook.svg" alt="" class="img-sosmed">
+          <img src="../asset/youtube.svg" alt="" class="img-sosmed">
+          <img src="../asset/instagram.svg" alt="" class="img-sosmed">
+          <img src="../asset/tiktok.svg" alt="" class="img-sosmed">
+      </div>
+  </footer>
+    <script src="../JS/script.js"></script>
+    <script src="apps.js"></script>
+  </body>
+</html>
